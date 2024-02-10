@@ -4,3 +4,4 @@ The Video Game: Archived Project (VGArchived Project) is a social catalouging si
 ## Features
 
 ## Contributors
+ShySpaceSheep - Project lead
