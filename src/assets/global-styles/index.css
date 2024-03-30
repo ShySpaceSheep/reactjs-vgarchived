@@ -5,7 +5,12 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: rgb(240, 240, 250);
+  background-color: rgb(230, 230, 240);
+
+  background-image: url("../backgrounds/background-pattern-loop.png");
+  background-repeat: repeat;
+  animation: loopable-bg-anim 10s linear infinite;
+  box-sizing: border-box;
 
   margin-top: 65px;
 
@@ -25,4 +30,13 @@ a:link,
 a:visited {
   text-decoration: none;
   color: black;
+}
+
+@keyframes loopable-bg-anim {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 100px 100px;
+  }
 }
