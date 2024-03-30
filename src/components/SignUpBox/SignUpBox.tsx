@@ -5,7 +5,7 @@ export default function SignUpBox() {
   return (
     <div className="content-container">
       <div className="form-container">
-        <h1>Create an Account</h1>
+        <h1 className="auth-header">Create an Account</h1>
         <form>
           <input type="text" placeholder="Email" className="input-field" />
           <input type="text" placeholder="Username" className="input-field" />
@@ -26,7 +26,7 @@ export default function SignUpBox() {
         </form>
 
         <div className="account-options">
-          <p>
+          <p className="auth-text">
             <Link to="/login">
               Already have an account?{" "}
               <span className="text-link">Log in!</span>
