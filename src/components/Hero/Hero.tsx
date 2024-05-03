@@ -1,9 +1,9 @@
-import "./Hero.css";
 import iconTracking from "./../../assets/hero-icons/icon-track.png";
 import iconSocials from "./../../assets/hero-icons/icon-socials.png";
 import iconIGDB from "./../../assets/hero-icons/icon-igdb.png";
 import { Link } from "react-router-dom";
 import FeatureCard from "./FeatureCard";
+import "./Hero.css";
 
 export default function Hero() {
   return (
@@ -32,7 +32,7 @@ export default function Hero() {
             <FeatureCard
               img={iconIGDB}
               header="Powered by the IGDB API!"
-              description="Access information of about 200,000 games and more with the
+              description="Access information of more than 200,000 games and more with the
                   power of the IGDB API from Twitch to ensure your catalogue is
                   complete."
             />

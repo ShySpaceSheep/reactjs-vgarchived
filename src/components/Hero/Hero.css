@@ -33,8 +33,8 @@ h2.hero-sub-header {
 .hero-container {
   display: flex;
   border-radius: 25px;
-  background-color: #182215;
-  margin: 3vw 15vw 0 15vw;
+  background-color: rgb(15, 65, 15);
+  margin: 3vw 15vw 3vw 15vw;
   height: auto;
 }
 .hero-div-left {
