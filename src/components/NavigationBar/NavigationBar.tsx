@@ -6,11 +6,22 @@ export default function NavigationBar() {
   return (
     <nav className="navbar-container">
       <div className="navbar-logo">
-        <Link to="/">
-          <img src={logoLarge} height="50" alt="logo"></img>
+        <Link
+          to="/"
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+          }}
+        >
+          <img
+            src={logoLarge}
+            alt="logo"
+            style={{ height: "100%", width: "100%" }}
+          />
         </Link>
       </div>
-      <div className="navbar-left">
+      <div className="navbar-div left">
         <Link to="/games" className="nav-interactable">
           <div className="nav-element"> GAMES </div>
         </Link>
@@ -18,7 +29,7 @@ export default function NavigationBar() {
           <div className="nav-element"> FORUMS </div>
         </Link>
       </div>
-      <div className="navbar-right">
+      <div className="navbar-div right">
         <Link to="/login" className="nav-interactable">
           <div className="nav-element"> LOGIN </div>
         </Link>
