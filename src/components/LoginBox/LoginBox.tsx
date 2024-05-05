@@ -5,7 +5,7 @@ export default function LoginBox() {
   return (
     <div className="content-container">
       <div className="form-container">
-        <h1>Login</h1>
+        <h1 className="auth-header">Login</h1>
         <form>
           <input type="text" placeholder="Email" className="input-field" />
           <input
@@ -19,8 +19,8 @@ export default function LoginBox() {
         </form>
 
         <div className="account-options">
-          <p>Forgot password?</p>
-          <p>
+          <p className="auth-text">Forgot password?</p>
+          <p className="auth-text">
             Don't have an account yet?{" "}
             <Link to="/signup">
               <span className="text-link">Sign up for free!</span>
