@@ -11,22 +11,12 @@ interface GameItem {
   cover_image: string;
 }
 
-interface ListItem {
-  id: number;
-  game_id: string;
-  score: number;
-  notes: string;
-}
-
 export default function Game() {
   const { gameId }: { gameId?: string } = useParams();
   const { user, userDetails } = useAuth();
 
   const [game, setGame] = useState<GameItem | null>(null);
   const [trackedGame, setTrackedGame] = useState(false);
-  const [PrevSubmissionInfo, setPrevSubmissionInfo] = useState<ListItem | null>(
-    null
-  );
   const [selectedScore, setSelectedScore] = useState<string>("");
   const [selectedStatus, setSelectedStatus] = useState<string>("");
   const [review, setReview] = useState<string>("");
@@ -60,7 +50,6 @@ export default function Game() {
       } else {
         if (data && data.length > 0) {
           setTrackedGame(true);
-          setPrevSubmissionInfo(data[0]);
           setSelectedScore(data[0].score.toString());
           setReview(data[0].notes);
         } else {

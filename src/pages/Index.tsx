@@ -1,24 +1,9 @@
 import NavigationBar from "../components/NavigationBar/NavigationBar";
 import Hero from "../components/Hero/Hero";
-import ContentContainer from "../components/ContentContainer/ContentContainer";
-import maintenance_rare from "../assets/maintenance-rare.png";
-import GameEntry from "../components/GameEntry/GameEntry";
 import { useAuth } from "../utils/auth-context";
 import { useEffect, useState } from "react";
 import { supabase } from "../utils/supabase-client";
 import { Link } from "react-router-dom";
-
-const videoGameDisplay: React.CSSProperties = {
-  width: "75%",
-  display: "flex",
-  flexDirection: "column",
-};
-
-const socialsDisplay: React.CSSProperties = {
-  width: "35%",
-  display: "flex",
-  flexDirection: "column",
-};
 
 interface GameItem {
   id: string;
@@ -67,7 +52,7 @@ export default function Index() {
         </div>
 
         <div className="game-grid-container">
-          {filteredGames.map((game, index) => (
+          {filteredGames.map((game) => (
             <Link to={`/games/${game.id}`} key={game.id}>
               <div className="game">
                 <div className="game-image">

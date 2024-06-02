@@ -3,7 +3,6 @@ import { Link, useParams } from "react-router-dom";
 import { supabase } from "../utils/supabase-client";
 import { useAuth } from "../utils/auth-context";
 import NavigationBar from "../components/NavigationBar/NavigationBar";
-import ContentContainer from "../components/ContentContainer/ContentContainer";
 import "./list.css";
 import logo from "../assets/logo-large.png";
 import green from "../assets/ui/green.png";
@@ -172,19 +171,6 @@ export default function List() {
     }
   }, [userDetails]);
 
-  const getGameData = async (gameID: string) => {
-    const { data, error } = await supabase
-      .from("games")
-      .select("*")
-      .eq("id", gameID);
-
-    if (error) {
-      console.error("Error fetching data:", error);
-    } else {
-      return data;
-    }
-  };
-
   return (
     <>
       <NavigationBar />
@@ -288,7 +274,7 @@ export default function List() {
                     </tr>
                   </thead>
                   <tbody>
-                    {playing.map((game, index) => (
+                    {playing.map((game) => (
                       <tr key={game.game_id}>
                         <td style={{ textAlign: "center" }}>
                           <img
@@ -337,7 +323,7 @@ export default function List() {
                     </tr>
                   </thead>
                   <tbody>
-                    {completed.map((game, index) => (
+                    {completed.map((game) => (
                       <tr key={game.game_id}>
                         <td style={{ textAlign: "center" }}>
                           <img
@@ -383,7 +369,7 @@ export default function List() {
                     </tr>
                   </thead>
                   <tbody>
-                    {onHold.map((game, index) => (
+                    {onHold.map((game) => (
                       <tr key={game.game_id}>
                         <td style={{ textAlign: "center" }}>
                           <img
@@ -431,7 +417,7 @@ export default function List() {
                     </tr>
                   </thead>
                   <tbody>
-                    {plannning.map((game, index) => (
+                    {plannning.map((game) => (
                       <tr key={game.game_id}>
                         <td style={{ textAlign: "center" }}>
                           <img
@@ -479,7 +465,7 @@ export default function List() {
                     </tr>
                   </thead>
                   <tbody>
-                    {dropped.map((game, index) => (
+                    {dropped.map((game) => (
                       <tr key={game.game_id}>
                         <td style={{ textAlign: "center" }}>
                           <img

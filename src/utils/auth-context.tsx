@@ -48,6 +48,7 @@ export const AuthProvider: React.FC<AuthProviderProps> = ({ children }) => {
       if (session?.user) {
         fetchUserDetails(session.user.id);
       } else {
+        console.log(event);
         setUserDetails(null);
       }
     });
