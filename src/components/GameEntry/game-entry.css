@@ -1,0 +1,20 @@
+@font-face {
+    font-family: Signika;
+    src: url(../../assets/fonts/signika.ttf) format("truetype");
+}
+
+.game-entry {
+    transition: transform .2s;
+}
+.game-entry:hover {
+    transform: scale(1.025);
+}
+.game-image img {
+    border-radius: 7px;
+    box-shadow: 0px 0px 4px 4px rgba(0, 0, 0, 0.1);
+}
+.game-title {
+    color: rgb(125, 125, 125);
+    font-family: 'Signika';
+    font-weight: 550;
+}

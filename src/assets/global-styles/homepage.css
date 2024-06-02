@@ -1,0 +1,6 @@
+.content-container {
+    filter: drop-shadow(0 0 2.5em black);
+    background-color: rgb(235, 240, 235);
+    margin: 5px;
+    border-radius: 25px;
+}
