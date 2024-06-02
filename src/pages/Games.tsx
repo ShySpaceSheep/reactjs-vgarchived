@@ -1,5 +1,4 @@
 import NavigationBar from "../components/NavigationBar/NavigationBar";
-import maintenance_rare from "../assets/maintenance-rare.png";
 import "./style.css";
 import { useEffect, useState } from "react";
 import { supabase } from "../utils/supabase-client";
@@ -51,7 +50,7 @@ export default function Games() {
         </div>
 
         <div className="game-grid-container">
-          {filteredGames.map((game, index) => (
+          {filteredGames.map((game) => (
             <Link to={`/games/${game.id}`} key={game.id}>
               <div className="game">
                 <div className="game-image">
