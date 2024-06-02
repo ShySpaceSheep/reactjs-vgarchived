@@ -1,0 +1,108 @@
+.container {
+    margin: 0px 64px 0px 64px;
+    padding: 0px;
+    background-color: rgb(240, 240, 250);
+    color: black;
+}
+
+.game-grid-container {
+    padding: 50px 50px 50px 50px;
+    display: grid;
+    justify-items: center;
+    grid-column-gap: 15px;
+    grid-row-gap: 30px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+.game {
+    transition: transform .2s;
+}
+.game:hover {
+    transform: scale(1.025);
+}
+.game-image img {
+    border-radius: 7px;
+    box-shadow: 0px 0px 4px 4px rgba(0, 0, 0, 0.1);
+}
+.game-title {
+    margin-top: 10px;
+    color: gray;
+    font-weight: bold;
+}
+.game-info-container {
+    padding: 50px 150px 50px 150px;
+    display: grid;
+    background-color: rgba(255, 255, 255, 0.05);
+    box-sizing: border-box;
+    grid-template-columns: 0.25fr 0.75fr;
+}
+.game-info-title {
+    margin: 15px;
+    color: white;
+    font-size: 52px;
+    font-weight: bolder;
+}
+.game-info {
+    margin-left: 15px;
+    padding-right: 75px;
+    color: white;
+    text-align: justify;
+    font-size: 20px;
+    font-weight: 100;
+}
+
+.search-bar {
+    padding: 45px 50px 15px 50px;
+}
+
+.generic-form-textbox {
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid rgb(230, 230, 230);
+    background-color: whitesmoke;
+    box-shadow: 0px 0px 3px 3px rgba(0, 0, 0, 0.05);
+    color: black;
+    box-sizing: border-box;
+    outline: none;
+}
+
+.form-container-2 {
+    padding: 30px 50px 30px 50px;
+    margin: 30px 10px 30px 10px;
+    background-color: #fefff9;
+    border-radius: 6px;
+    color: black;
+}
+
+.generic-form-textarea-variant {
+    width: 100%;
+    height: 100px;
+    margin-top: 15px;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid rgb(230, 230, 230);
+    box-shadow: 0px 0px 3px 3px rgba(0, 0, 0, 0.05);
+    font-family: 'Segoe UI';
+    resize: none;
+    box-sizing: border-box;
+    color: black;
+    background-color: whitesmoke;
+}
+
+.generic-form-textarea-variant:focus {
+    outline: none;
+}
+
+.dropdown {
+    width: 50%;
+}
+
+.generic-button {
+    width: 50%;
+    margin: 0px 20px 0px 20px;
+    color: whitesmoke;
+    background-color: gray;
+    border: none;
+    border-radius: 8px;
+    padding: 8px 25px 8px 25px;
+}

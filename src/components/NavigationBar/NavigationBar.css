@@ -7,8 +7,9 @@
   display: flex;
   position: fixed;
   box-sizing: border-box;
+  color: white;
   background-color: rgb(25, 26, 25);
-  box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.15);
 }
 .navbar-logo {
   width: 20%;
@@ -18,26 +19,38 @@
   align-items: center;
 }
 .navbar-div {
-  width: 40%;
   display: flex;
   align-items: center;
 }
 .left {
+  width: 20%;
   justify-content: left;
 }
 .right {
+  width: 60%;
   justify-content: right;
 }
+.nav-button {
+  display: flex;
+  align-items: center;
+  padding: 0.5em 2em 0.5em 2em;
+  margin-left: 15px;
+  color: white;
+  border: 1px solid whitesmoke;
+  font-weight: bold;
+  border-radius: 2px;
+  transition: 0.25s;
+}
 .nav-cta-element {
-  background-color: hsl(107, 60%, 35%);
-  border-radius: 10px;
+  background-color: rgb(59, 143, 36);
+  border: 1px solid rgb(59, 143, 36);
+  border-radius: 2px;
   margin: 0px 0px 0px 20px;
-  padding: 1em 2em 1em 2em;
+  padding: 0.5em 2em 0.5em 2em;
   display: flex;
   align-items: center;
   color: white;
-  font-size: 15px;
-  font-weight: 550;
+  font-weight: bold;
   transition: 0.2s;
 }
 .nav-element {
@@ -51,10 +64,17 @@
   font-size: 1rem;
 }
 .nav-element:hover {
+  filter: drop-shadow(0 0 1em rgb(6, 209, 23));
   border-bottom: 4px rgb(6, 209, 23) solid;
   transition: 0.2s;
 }
+.nav-button:hover {
+  filter: drop-shadow(0 0 1.5em rgb(75, 76, 75));
+  background-color: rgb(45, 46, 45);
+  transition: 0.2s;
+}
 .nav-cta-element:hover {
+  filter: drop-shadow(0 0 2em green);
   background-color: hsl(107, 60%, 50%);
   transition: 0.2s;
 }
