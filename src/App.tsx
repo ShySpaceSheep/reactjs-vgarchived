@@ -1,6 +1,4 @@
-import { useState, useEffect } from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import { supabase } from "./utils/supabase-client";
 import Login from "./pages/Login";
 import Index from "./pages/Index";
 import Signup from "./pages/Signup";

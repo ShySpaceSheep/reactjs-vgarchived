@@ -1,11 +1,6 @@
 import "./game-entry.css";
 import TestImage from "../../assets/test/valo.png";
 
-interface GameProps {
-  imgLink: string;
-  title: string;
-}
-
 export default function GameEntry() {
   return (
     <div className="game-entry">
