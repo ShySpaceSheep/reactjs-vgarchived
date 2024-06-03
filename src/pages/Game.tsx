@@ -52,6 +52,7 @@ export default function Game() {
           setTrackedGame(true);
           setSelectedScore(data[0].score.toString());
           setReview(data[0].notes);
+          setSelectedStatus(data[0].status)
         } else {
           setTrackedGame(false);
         }
